@@ -13,6 +13,11 @@
 		CB68331428505BBD00366004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB68331228505BBD00366004 /* Main.storyboard */; };
 		CB68331628505BBE00366004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB68331528505BBE00366004 /* Assets.xcassets */; };
 		CB68331928505BBE00366004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB68331728505BBE00366004 /* LaunchScreen.storyboard */; };
+		CB68332628505DB000366004 /* FirstOnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB68332528505DB000366004 /* FirstOnboardingController.swift */; };
+		CB68332828505EF100366004 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB68332728505EF100366004 /* Extensions.swift */; };
+		CB68332A2850684900366004 /* SecondOnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6833292850684900366004 /* SecondOnboardingController.swift */; };
+		CB68332C28506B5C00366004 /* ThirdOnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB68332B28506B5C00366004 /* ThirdOnboardingController.swift */; };
+		CB68332F28508EAE00366004 /* HomescreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB68332E28508EAE00366004 /* HomescreenController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		CB68331528505BBE00366004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB68331828505BBE00366004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB68331A28505BBE00366004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB68332528505DB000366004 /* FirstOnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingController.swift; sourceTree = "<group>"; };
+		CB68332728505EF100366004 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CB6833292850684900366004 /* SecondOnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondOnboardingController.swift; sourceTree = "<group>"; };
+		CB68332B28506B5C00366004 /* ThirdOnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdOnboardingController.swift; sourceTree = "<group>"; };
+		CB68332E28508EAE00366004 /* HomescreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,11 @@
 		CB68330B28505BBD00366004 /* iOS-Onboarding-template-MVVM-Declarative */ = {
 			isa = PBXGroup;
 			children = (
+				CB68332428505D0A00366004 /* Model */,
+				CB68332328505D0000366004 /* View */,
+				CB68332228505CFA00366004 /* ViewModel */,
+				CB68332128505CF500366004 /* Controller */,
+				CB68332028505CEA00366004 /* Utils */,
 				CB68330C28505BBD00366004 /* AppDelegate.swift */,
 				CB68330E28505BBD00366004 /* SceneDelegate.swift */,
 				CB68331028505BBD00366004 /* ViewController.swift */,
@@ -65,6 +80,54 @@
 				CB68331A28505BBE00366004 /* Info.plist */,
 			);
 			path = "iOS-Onboarding-template-MVVM-Declarative";
+			sourceTree = "<group>";
+		};
+		CB68332028505CEA00366004 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CB68332728505EF100366004 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CB68332128505CF500366004 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB68332D28508E9400366004 /* Onboarding */,
+				CB68332E28508EAE00366004 /* HomescreenController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB68332228505CFA00366004 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB68332328505D0000366004 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB68332428505D0A00366004 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB68332D28508E9400366004 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CB68332528505DB000366004 /* FirstOnboardingController.swift */,
+				CB6833292850684900366004 /* SecondOnboardingController.swift */,
+				CB68332B28506B5C00366004 /* ThirdOnboardingController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB68332828505EF100366004 /* Extensions.swift in Sources */,
 				CB68331128505BBD00366004 /* ViewController.swift in Sources */,
+				CB68332F28508EAE00366004 /* HomescreenController.swift in Sources */,
+				CB68332A2850684900366004 /* SecondOnboardingController.swift in Sources */,
+				CB68332628505DB000366004 /* FirstOnboardingController.swift in Sources */,
 				CB68330D28505BBD00366004 /* AppDelegate.swift in Sources */,
+				CB68332C28506B5C00366004 /* ThirdOnboardingController.swift in Sources */,
 				CB68330F28505BBD00366004 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
